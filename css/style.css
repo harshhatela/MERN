@@ -306,6 +306,24 @@ img {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.home-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.home-social-icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    transition: .3s;
+}
+
+.home-social-icon:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
 }
 
 .home-img {
@@ -339,33 +357,56 @@ img {
 
 /* ================= SKILLS ================= */
 .skills-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
-.skill-card {
+.skill-category {
     background-color: var(--container-color);
-    padding: 2rem 1rem;
+    padding: 2rem;
     border-radius: 1rem;
-    text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,.05);
     border: 1px solid var(--border-color);
     transition: .3s;
 }
 
-.skill-card:hover {
-    transform: translateY(-5px);
+.skill-category:hover {
     border-color: var(--primary-color);
+    transform: translateY(-5px);
 }
 
-.skill-icon {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.skill-title {
+.skill-category-title {
     font-size: var(--h3-font-size);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--primary-color);
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: var(--body-color);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    border: 1px solid var(--border-color);
+    transition: .3s;
+}
+
+.skill-tag:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
 }
 
 /* ================= EDUCATION ================= */
@@ -415,11 +456,28 @@ img {
 
 .timeline-title {
     font-size: var(--h3-font-size);
-    margin-bottom: .5rem;
+    margin-bottom: .25rem;
+}
+
+.timeline-subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: var(--font-medium);
 }
 
 .timeline-text {
     color: var(--text-color);
+}
+
+.timeline-list {
+    margin-left: 1rem;
+}
+
+.timeline-list li {
+    list-style-type: disc;
+    margin-bottom: .5rem;
 }
 
 /* ================= PROJECTS ================= */
@@ -474,6 +532,79 @@ img {
     background-color: var(--primary-color);
     color: #fff;
     border-radius: .25rem;
+}
+
+/* ================= CERTIFICATIONS ================= */
+.certifications-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.cert-card {
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,.05);
+    border: 1px solid var(--border-color);
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.cert-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.cert-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+/* ================= ACHIEVEMENTS ================= */
+.achievements-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.achievement-card {
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.05);
+    border: 1px solid var(--border-color);
+    transition: .3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.achievement-icon {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.achievement-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: .25rem;
+}
+
+.achievement-desc {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
 }
 
 /* ================= CONTACT ================= */
@@ -556,6 +687,13 @@ img {
 .footer-title {
     font-size: var(--h2-font-size);
     color: var(--primary-color);
+    margin-bottom: .25rem;
+}
+
+.footer-subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin-bottom: 1rem;
 }
 
 .footer-social {
@@ -647,10 +785,15 @@ img {
 
     .home-buttons {
         justify-content: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    .home-social {
+        justify-content: flex-start;
     }
 
     .skills-container {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .projects-container {
@@ -670,5 +813,23 @@ img {
 
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ================= OVERRIDES FOR CENTERED LAYOUT ================= */
+@media screen and (min-width: 768px) {
+    .home-container.home-centered {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+    .home-container.home-centered .home-content {
+        text-align: center;
+    }
+    .home-container.home-centered .home-buttons {
+        justify-content: center;
+    }
+    .home-container.home-centered .home-social {
+        justify-content: center;
     }
 }

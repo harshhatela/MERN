@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Launchpad - Portfolio</title>
+    <title>Harsh Hatela - Portfolio</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +17,15 @@
     <!-- Header & Navigation -->
     <header id="header" class="header">
         <nav class="navbar container">
-            <a href="#" class="logo">Dev<span>Launchpad</span></a>
+            <a href="#" class="logo">Harsh Hatela</a>
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                     <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="nav-close" id="nav-close">
@@ -44,21 +45,25 @@
     <main class="main">
         <!-- Hero Section -->
         <section class="home section reveal" id="home">
-            <div class="home-container container grid">
+            <div class="home-container container grid home-centered">
+                <div class="home-img">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300&auto=format&fit=crop" alt="Harsh Hatela Avatar" class="profile-img placeholder-avatar">
+                </div>
                 <div class="home-content">
                     <span class="home-subtitle">Hello, I'm</span>
-                    <h1 class="home-title">John Doe</h1>
-                    <h3 class="home-education">Frontend Developer</h3>
+                    <h1 class="home-title">Harsh Hatela</h1>
+                    <h3 class="home-education">Full Stack Developer | UI/UX Designer | Frontend Engineer</h3>
                     <p class="home-description">
-                        Passionate about creating modern, responsive, and user-friendly web experiences. Dedicated to continuous learning and building high-quality software.
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i> Jaipur, Rajasthan, India
                     </p>
                     <div class="home-buttons">
                         <a href="#contact" class="button">Contact Me <i class="fas fa-paper-plane"></i></a>
-                        <a href="#projects" class="button button-ghost">View Work</a>
+                        <a href="https://harshhatela.in" target="_blank" class="button button-ghost">Portfolio <i class="fas fa-external-link-alt"></i></a>
                     </div>
-                </div>
-                <div class="home-img">
-                    <img src="https://via.placeholder.com/300" alt="Profile Placeholder" class="profile-img">
+                    <div class="home-social">
+                        <a href="https://github.com/harshhatela" target="_blank" class="home-social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/harshhatela" target="_blank" class="home-social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -70,11 +75,11 @@
             <div class="about-container container grid">
                 <div class="about-data">
                     <p class="about-description">
-                        <strong>Professional Introduction:</strong> I am a highly motivated Frontend Developer with a strong foundation in modern web technologies. I love transforming complex problems into elegant, intuitive, and visually appealing user interfaces.
+                        I am a Computer Science Engineering student passionate about Full Stack Development, UI/UX Design, Artificial Intelligence, and modern web technologies.
                         <br><br>
-                        <strong>Career Goals:</strong> To excel in frontend engineering by mastering modern web architectures, contributing to impactful projects, and eventually growing into a full-stack role.
+                        I enjoy building scalable web applications, intuitive user experiences, and AI-powered solutions that solve real-world problems.
                         <br><br>
-                        <strong>Personal Interests:</strong> Beyond coding, I enjoy open-source contributions, reading tech blogs, UI/UX design, and exploring new web frameworks.
+                        My interests include React development, design systems, open-source contribution, NLP applications, and creating products that balance technical excellence with user-centered design.
                     </p>
                 </div>
             </div>
@@ -85,33 +90,100 @@
             <h2 class="section-title">My Skills</h2>
             <span class="section-subtitle">Technical Arsenal</span>
             <div class="skills-container container grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5 skill-icon"></i>
-                    <h3 class="skill-title">HTML</h3>
+                
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript ES6+</span>
+                        <span class="skill-tag"><i class="fab fa-react"></i> React.js</span>
+                        <span class="skill-tag"><i class="fas fa-wind"></i> Tailwind CSS</span>
+                        <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive Web Design</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt skill-icon"></i>
-                    <h3 class="skill-title">CSS</h3>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> Express.js</span>
+                        <span class="skill-tag"><i class="fas fa-network-wired"></i> REST APIs</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-js skill-icon"></i>
-                    <h3 class="skill-title">JavaScript</h3>
+
+                <!-- Database -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><i class="fas fa-database"></i> Database</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-tag"><i class="fas fa-fire"></i> Firebase</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-react skill-icon"></i>
-                    <h3 class="skill-title">React</h3>
+
+                <!-- AI & ML -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><i class="fas fa-brain"></i> AI & ML</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag"><i class="fas fa-language"></i> NLP</span>
+                        <span class="skill-tag"><i class="fas fa-robot"></i> LLMs</span>
+                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> RAG</span>
+                        <span class="skill-tag"><i class="fas fa-search"></i> Semantic Search</span>
+                        <span class="skill-tag"><i class="fas fa-vector-square"></i> Vector Search</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-node-js skill-icon"></i>
-                    <h3 class="skill-title">Node.js</h3>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
+                        <span class="skill-tag"><i class="fas fa-cloud-upload-alt"></i> Vercel</span>
+                        <span class="skill-tag"><i class="fas fa-paper-plane"></i> Postman</span>
+                        <span class="skill-tag"><i class="fab fa-figma"></i> Figma</span>
+                        <span class="skill-tag"><i class="fas fa-book"></i> Notion</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-git-alt skill-icon"></i>
-                    <h3 class="skill-title">Git</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-github skill-icon"></i>
-                    <h3 class="skill-title">GitHub</h3>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience section reveal" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <span class="section-subtitle">My Work History</span>
+            <div class="experience-container container">
+                <div class="timeline">
+                    <!-- Exp 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">July 2025 - October 2025</div>
+                        <h3 class="timeline-title">UI/UX Designer Intern</h3>
+                        <span class="timeline-subtitle">Object Square</span>
+                        <ul class="timeline-text timeline-list">
+                            <li>Created wireframes and high-fidelity designs</li>
+                            <li>Built reusable component libraries</li>
+                            <li>Improved developer handoff workflow</li>
+                            <li>Designed responsive mobile and web interfaces</li>
+                        </ul>
+                    </div>
+                    <!-- Exp 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Summer 2026</div>
+                        <h3 class="timeline-title">Open Source Contributor & Ambassador</h3>
+                        <span class="timeline-subtitle">GirlScript Summer of Code 2026</span>
+                        <ul class="timeline-text timeline-list">
+                            <li>Contributed to open-source projects</li>
+                            <li>Collaborated on GitHub workflows</li>
+                            <li>Improved documentation and code quality</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -124,21 +196,9 @@
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">2020 - 2024</div>
-                        <h3 class="timeline-title">B.Sc. in Computer Science</h3>
-                        <p class="timeline-text">University of Technology. Graduated with honors. Focused on web engineering and software architecture.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2023</div>
-                        <h3 class="timeline-title">Frontend Web Development Bootcamp</h3>
-                        <p class="timeline-text">Intensive training program covering modern HTML, CSS, JavaScript, and React.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2018 - 2020</div>
-                        <h3 class="timeline-title">High School Diploma</h3>
-                        <p class="timeline-text">Focused on mathematics and computer science fundamentals.</p>
+                        <div class="timeline-date">August 2023 - May 2027</div>
+                        <h3 class="timeline-title">Bachelor of Technology (B.Tech) - Computer Science Engineering</h3>
+                        <p class="timeline-text">Government Engineering College, Jaipur</p>
                     </div>
                 </div>
             </div>
@@ -151,56 +211,115 @@
             <div class="projects-container container grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Project 1" class="project-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=400&auto=format&fit=crop" alt="Citizen Complaint Engine" class="project-img">
                     <div class="project-content">
-                        <h3 class="project-title">E-commerce Dashboard</h3>
-                        <p class="project-description">A responsive admin dashboard for managing products, orders, and users with interactive charts.</p>
+                        <h3 class="project-title">Citizen Complaint Engine</h3>
+                        <p class="project-description">AI-powered civic grievance platform featuring complaint submission, automatic categorization, intelligent routing, analytics dashboard, and scalable complaint management workflows.</p>
                         <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS Grid</span>
-                            <span>JavaScript</span>
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                            <span>NLP</span>
                         </div>
-                        <a href="#" class="button button-small">View Project <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Project 2" class="project-img">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=400&auto=format&fit=crop" alt="LocalDoc AI" class="project-img">
                     <div class="project-content">
-                        <h3 class="project-title">Weather Application</h3>
-                        <p class="project-description">Real-time weather forecasting app using public APIs to display current conditions and forecasts.</p>
+                        <h3 class="project-title">LocalDoc AI</h3>
+                        <p class="project-description">Privacy-first local AI workstation enabling semantic retrieval, architecture-aware code indexing, persistent memory, and offline AI-assisted development.</p>
                         <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>Fetch API</span>
-                            <span>CSS3</span>
+                            <span>Node.js</span>
+                            <span>Local LLMs</span>
+                            <span>RAG</span>
+                            <span>Vector Search</span>
                         </div>
-                        <a href="#" class="button button-small">View Project <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Project 3" class="project-img">
+                    <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=400&auto=format&fit=crop" alt="The Truth Herald" class="project-img">
                     <div class="project-content">
-                        <h3 class="project-title">Task Management Tool</h3>
-                        <p class="project-description">A productivity app featuring drag-and-drop interfaces, local storage support, and customizable categories.</p>
+                        <h3 class="project-title">The Truth Herald</h3>
+                        <p class="project-description">Fake news detection platform using machine learning and NLP techniques for credibility analysis and misinformation classification.</p>
                         <div class="project-tech">
-                            <span>Vanilla JS</span>
-                            <span>Local Storage</span>
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>scikit-learn</span>
+                            <span>TF-IDF</span>
                         </div>
-                        <a href="#" class="button button-small">View Project <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <!-- Project 4 -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Project 4" class="project-img">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=400&auto=format&fit=crop" alt="Nivaan" class="project-img">
                     <div class="project-content">
-                        <h3 class="project-title">Portfolio Template</h3>
-                        <p class="project-description">A highly customizable, responsive portfolio template for developers and designers.</p>
+                        <h3 class="project-title">Nivaan</h3>
+                        <p class="project-description">Student mental health platform designed for Smart India Hackathon focused on accessibility, emotional comfort, and user-centered experiences.</p>
                         <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS Flexbox</span>
+                            <span>Figma</span>
+                            <span>UX Research</span>
+                            <span>Design Systems</span>
                         </div>
-                        <a href="#" class="button button-small">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications section reveal" id="certifications">
+            <h2 class="section-title">Certifications</h2>
+            <span class="section-subtitle">Continuous Learning</span>
+            <div class="certifications-container container grid">
+                <div class="cert-card">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <h3 class="cert-title">Oracle Cloud Infrastructure 2025 AI Foundations Associate</h3>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <h3 class="cert-title">IBM UX/UI Design</h3>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <h3 class="cert-title">NVIDIA Fundamentals of Deep Learning</h3>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <h3 class="cert-title">DeepLearning.AI Supervised Machine Learning</h3>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <h3 class="cert-title">Basics of Machine Learning and IoT (MNIT Jaipur)</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements section reveal" id="achievements">
+            <h2 class="section-title">Achievements</h2>
+            <span class="section-subtitle">Milestones</span>
+            <div class="achievements-container container grid">
+                <div class="achievement-card">
+                    <i class="fas fa-trophy achievement-icon"></i>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Selected Participant</h3>
+                        <p class="achievement-desc">ISRO Bharatiya Antariksh Hackathon 2025</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-medal achievement-icon"></i>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Participant</h3>
+                        <p class="achievement-desc">Hackwise 2026</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-star achievement-icon"></i>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Open Source Contributor</h3>
+                        <p class="achievement-desc">GSSoC 2026</p>
                     </div>
                 </div>
             </div>
@@ -219,7 +338,7 @@
                     </div>
                     <div class="form-group">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" class="form-input" placeholder="Insert your email">
+                        <input type="email" id="email" class="form-input" placeholder="Insert your email" value="workwithharsh.hatela@gmail.com">
                         <span class="error-msg" id="email-error"></span>
                     </div>
                     <div class="form-group">
@@ -242,13 +361,14 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container container">
-            <h1 class="footer-title">John Doe</h1>
+            <h1 class="footer-title">Harsh Hatela</h1>
+            <p class="footer-subtitle">Full Stack Developer | UI/UX Designer | Frontend Engineer</p>
             <ul class="footer-social">
-                <a href="#" class="footer-social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/harshhatela" target="_blank" class="footer-social-link"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/harshhatela" target="_blank" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://harshhatela.in" target="_blank" class="footer-social-link"><i class="fas fa-globe"></i></a>
             </ul>
-            <span class="footer-copy">&#169; 2026 John Doe. All rights reserved.</span>
+            <span class="footer-copy">&#169; 2026 Harsh Hatela. All rights reserved.</span>
         </div>
     </footer>
 
