@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Launchpad - Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+    <!-- Header & Navigation -->
+    <header id="header" class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">Dev<span>Launchpad</span></a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="nav-btns">
+                <i class="fas fa-sun change-theme" id="theme-button"></i>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="home section reveal" id="home">
+            <div class="home-container container grid">
+                <div class="home-content">
+                    <span class="home-subtitle">Hello, I'm</span>
+                    <h1 class="home-title">John Doe</h1>
+                    <h3 class="home-education">Frontend Developer</h3>
+                    <p class="home-description">
+                        Passionate about creating modern, responsive, and user-friendly web experiences. Dedicated to continuous learning and building high-quality software.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#contact" class="button">Contact Me <i class="fas fa-paper-plane"></i></a>
+                        <a href="#projects" class="button button-ghost">View Work</a>
+                    </div>
+                </div>
+                <div class="home-img">
+                    <img src="https://via.placeholder.com/300" alt="Profile Placeholder" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section reveal" id="about">
+            <h2 class="section-title">About Me</h2>
+            <span class="section-subtitle">My Introduction</span>
+            <div class="about-container container grid">
+                <div class="about-data">
+                    <p class="about-description">
+                        <strong>Professional Introduction:</strong> I am a highly motivated Frontend Developer with a strong foundation in modern web technologies. I love transforming complex problems into elegant, intuitive, and visually appealing user interfaces.
+                        <br><br>
+                        <strong>Career Goals:</strong> To excel in frontend engineering by mastering modern web architectures, contributing to impactful projects, and eventually growing into a full-stack role.
+                        <br><br>
+                        <strong>Personal Interests:</strong> Beyond coding, I enjoy open-source contributions, reading tech blogs, UI/UX design, and exploring new web frameworks.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section reveal" id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <span class="section-subtitle">Technical Arsenal</span>
+            <div class="skills-container container grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h3 class="skill-title">HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <h3 class="skill-title">CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js skill-icon"></i>
+                    <h3 class="skill-title">JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react skill-icon"></i>
+                    <h3 class="skill-title">React</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js skill-icon"></i>
+                    <h3 class="skill-title">Node.js</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <h3 class="skill-title">Git</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-github skill-icon"></i>
+                    <h3 class="skill-title">GitHub</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education section reveal" id="education">
+            <h2 class="section-title">Education</h2>
+            <span class="section-subtitle">My Academic Journey</span>
+            <div class="education-container container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 - 2024</div>
+                        <h3 class="timeline-title">B.Sc. in Computer Science</h3>
+                        <p class="timeline-text">University of Technology. Graduated with honors. Focused on web engineering and software architecture.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023</div>
+                        <h3 class="timeline-title">Frontend Web Development Bootcamp</h3>
+                        <p class="timeline-text">Intensive training program covering modern HTML, CSS, JavaScript, and React.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2018 - 2020</div>
+                        <h3 class="timeline-title">High School Diploma</h3>
+                        <p class="timeline-text">Focused on mathematics and computer science fundamentals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section reveal" id="projects">
+            <h2 class="section-title">Portfolio</h2>
+            <span class="section-subtitle">Recent Projects</span>
+            <div class="projects-container container grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 1" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Dashboard</h3>
+                        <p class="project-description">A responsive admin dashboard for managing products, orders, and users with interactive charts.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS Grid</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="button button-small">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 2" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Application</h3>
+                        <p class="project-description">Real-time weather forecasting app using public APIs to display current conditions and forecasts.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Fetch API</span>
+                            <span>CSS3</span>
+                        </div>
+                        <a href="#" class="button button-small">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 3" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management Tool</h3>
+                        <p class="project-description">A productivity app featuring drag-and-drop interfaces, local storage support, and customizable categories.</p>
+                        <div class="project-tech">
+                            <span>Vanilla JS</span>
+                            <span>Local Storage</span>
+                        </div>
+                        <a href="#" class="button button-small">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 4" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Template</h3>
+                        <p class="project-description">A highly customizable, responsive portfolio template for developers and designers.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS Flexbox</span>
+                        </div>
+                        <a href="#" class="button button-small">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section reveal" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <span class="section-subtitle">Get in touch</span>
+            <div class="contact-container container">
+                <form action="" class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="Insert your name">
+                        <span class="error-msg" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="Insert your email">
+                        <span class="error-msg" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="form-input" placeholder="Insert your subject">
+                        <span class="error-msg" id="subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" cols="30" rows="10" class="form-input" placeholder="Write your message here..."></textarea>
+                        <span class="error-msg" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="button">Send Message <i class="fas fa-paper-plane"></i></button>
+                    <div class="form-success" id="form-success">Message sent successfully!</div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <h1 class="footer-title">John Doe</h1>
+            <ul class="footer-social">
+                <a href="#" class="footer-social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+            </ul>
+            <span class="footer-copy">&#169; 2026 John Doe. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup-icon"></i>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
