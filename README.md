@@ -1,67 +1,61 @@
-# Harsh Hatela - Professional Portfolio
-
-Welcome to my personal portfolio website! I am a Computer Science Engineering student passionate about Full Stack Development, UI/UX Design, Artificial Intelligence, and modern web technologies. This project was originally built for the BeeSkilled Week 1 Internship Assignment and has been expanded to serve as my live professional portfolio.
+# Harsh Hatela - Personal Portfolio
 
 ## Overview
-This portfolio showcases my journey, skills, professional experience, projects, and achievements. It is built from scratch using pure vanilla technologies to demonstrate strong fundamental capabilities in modern web development and design aesthetics without relying on external UI frameworks.
+
+A single-page personal portfolio website built as part of the BeeSkilled Full Stack Web Development (MERN) internship, Week 1 assignment. The entire site is built with vanilla HTML, CSS, and JavaScript — no frameworks, libraries, or build tools are used.
 
 ## Features
-- **Semantic HTML5** architecture for accessibility and SEO.
-- **Modern CSS3** layouts utilizing CSS Flexbox and CSS Grid.
-- **Mobile-First Responsive Design** ensuring a seamless experience across all screen sizes.
-- **Dark/Light Theme Toggle** with `localStorage` memory.
-- **Scroll Reveal Animations** built with vanilla JavaScript.
-- **Interactive Navigation** featuring sticky behavior, mobile hamburger menu, and active section highlighting (scroll-spy).
-- **Client-Side Form Validation** providing real-time feedback and secure constraints.
+
+- Responsive navigation bar with a mobile hamburger menu (collapses below 768px)
+- Home, About, Education, Projects, and Contact sections
+- CSS Flexbox used for the navbar and education layout
+- CSS Grid used for the projects layout
+- Contact form with JavaScript validation (required fields, email format check, minimum message length of 10 characters)
+- Inline error messages for invalid fields and a success message on valid submission
 
 ## Technologies Used
-- HTML5
-- CSS3 (Custom Variables, Flexbox, Grid)
-- JavaScript (ES6+, DOM Manipulation)
-- [Google Fonts (Poppins)](https://fonts.google.com/specimen/Poppins)
-- [Font Awesome Icons](https://fontawesome.com/)
 
-## Screenshots
-*(Add screenshots of your application here)*
-- Desktop View
-- Mobile View
-- Dark/Light Mode
+- HTML5
+- CSS3
+- JavaScript (ES6)
 
 ## Folder Structure
-```text
-BeeSkilled/
-│
+
+```
+portfolio/
 ├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── assets/
-│   ├── images/
-│   └── icons/
+├── style.css
+├── script.js
 └── README.md
 ```
 
-## Installation
-To run this project locally, simply clone the repository and open the index file:
+## Installation / Running Locally
 
-```bash
-git clone https://github.com/harshhatela/MERN.git
-cd MERN/BeeSkilled
-```
-Open `index.html` in your favorite browser. No local server or build tools are required, though a Live Server extension is recommended for development.
+There are no dependencies, so no `npm install` or build step is needed.
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/harshhatela/MERN.git
+   ```
+2. Open `index.html` directly in a browser, or serve it with any static server (e.g. the VS Code Live Server extension).
 
 ## Deployment
-This static website can be easily deployed to platforms like GitHub Pages, Vercel, or Netlify. 
-1. Push the code to a GitHub repository.
-2. Link the repository to your hosting provider.
-3. Configure the root directory if needed and deploy.
+
+This is a fully static site, so it can be deployed with no build configuration.
+
+**Vercel:**
+1. Import the GitHub repo on Vercel.
+2. Set the framework preset to "Other".
+3. Leave the build command empty.
+4. Set the output directory to the root (`.`).
+
+**GitHub Pages:**
+1. Go to the repo's Settings → Pages.
+2. Under "Source", select the `main` branch and root (`/`) folder.
+3. Save — the site will be live at `https://harshhatela.github.io/MERN/`.
 
 ## Future Improvements
-- Integrate a backend service (like Node.js or Firebase) to handle form submissions dynamically.
-- Add an interactive 3D element using Three.js for the hero section.
-- Implement a CMS (Content Management System) to update projects and experience easily.
-- Optimize asset loading and performance scores.
 
----
-**Designed and Built by [Harsh Hatela](https://harshhatela.in)**
+- Convert the site to React components for better maintainability as it grows.
+- Connect the contact form to a real backend or email service (e.g. EmailJS or a Node.js/Express API) so messages are actually delivered.
+- Add more projects to the portfolio as they are completed during the internship.
